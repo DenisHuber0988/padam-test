@@ -1,8 +1,8 @@
 from django.contrib import admin
 
-from . import models
+from .models import Place
 
 
-@admin.register(models.Place)
+@admin.register(Place)
 class PlaceAdmin(admin.ModelAdmin):
     pass

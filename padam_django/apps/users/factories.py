@@ -1,7 +1,7 @@
 import factory
 from faker import Faker
 
-from . import models
+from .models import User
 
 
 fake = Faker(['fr'])
@@ -14,4 +14,4 @@ class UserFactory(factory.django.DjangoModelFactory):
     last_name = factory.LazyFunction(fake.last_name)
 
     class Meta:
-        model = models.User
+        model = User

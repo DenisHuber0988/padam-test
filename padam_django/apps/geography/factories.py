@@ -1,7 +1,7 @@
 import factory
 from faker import Faker
 
-from . import models
+from .models import Place
 
 
 fake = Faker(['fr'])
@@ -14,4 +14,4 @@ class PlaceFactory(factory.django.DjangoModelFactory):
     latitude = factory.LazyFunction(fake.latitude)
 
     class Meta:
-        model = models.Place
+        model = Place

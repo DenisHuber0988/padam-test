@@ -1,13 +1,13 @@
 from django.contrib import admin
 
-from . import models
+from .models import Bus, Driver
 
 
-@admin.register(models.Bus)
+@admin.register(Bus)
 class BusAdmin(admin.ModelAdmin):
     pass
 
 
-@admin.register(models.Driver)
+@admin.register(Driver)
 class DriverAdmin(admin.ModelAdmin):
     pass
