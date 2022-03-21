@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'padam_django.apps.common',
     'padam_django.apps.fleet',
     'padam_django.apps.geography',
+    'padam_django.apps.shift',
     'padam_django.apps.users',
 ]
 
@@ -85,6 +86,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'TEST': {
+            'NAME': 'padam_test'
+        }
     }
 }
 
