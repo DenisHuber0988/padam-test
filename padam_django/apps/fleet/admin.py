@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from .models import Bus, Driver
+from padam_django.apps.fleet.models.buses import Bus
+from padam_django.apps.fleet.models.drivers import Driver
 
 
 @admin.register(Bus)

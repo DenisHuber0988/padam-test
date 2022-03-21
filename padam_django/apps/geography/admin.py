@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Place
+from padam_django.apps.geography.models.places import Place
 
 
 @admin.register(Place)
